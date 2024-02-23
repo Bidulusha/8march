@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "maki-sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("maki-sans"),
+        url("fonts/maki-sans.woff2") format("woff2"),
+        url("fonts/maki-sans.woff") format("woff");
+}
+
+body {
+    background: url("images/bcgr.png") repeat; 
+    background-size: 250%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 14vh;
+    margin-top: 14vh;
+    background:url("images/cloud.png") no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+
+header h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 6vh;
+    font-family: "maki-sans";
+    color: #dc143c;
+}
+
+.main{
+    display: flex;
+    margin-top: 10vh;
+}
+
+.main img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+
+footer {
+    background: url("images/footerbg.png") repeat; 
+    background-size: 100%;
+    text-align: center;
+}
+
+footer video{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+}
+
+footer h1{
+    font-size: 6vh;
+    color: rgb(251, 252, 204);
+    text-shadow: 1px 1px 2px black;
+    margin: 0;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+}
