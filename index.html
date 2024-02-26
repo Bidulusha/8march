@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel = "stylesheet" href="styles.css">
+    <script src = "scripts.js"></script>
+    <title>console</title>
 </head>
 <body>
-    <header>
-        <h1>С 8 марта!</h1>
-    </header>
     <div class="main">
-        <img src="images/main.png">
+        <ul type = "&gt;&nbsp;">
+            <li class = "info">Developer console</li>
+            <li class = "info">Version 1.5</li>
+            <br>
+            <div class = "inp" id = "cinp">
+                <li><label class="cursor">
+                    <input type="text" 
+                    id="cin" 
+                    name = "cin" 
+                    onblur="this.focus()"
+                    onkeydown="search(this)"
+                    autofocus/>
+                </label></li>
+            </div>
+        
+        </ul>
     </div>
-    <footer>
-        <video controls="controls">
-            <source src = "videos/lhded.mp4" type="video/mp4">
-        </video>
-        <h1>Желаем удачи!</h1>
-    </footer>
 </body>
 </html>
