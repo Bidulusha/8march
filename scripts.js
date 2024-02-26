@@ -5,11 +5,11 @@ function search(ele){
     const p = document.getElementById('cinp');
     const inputfield = document.getElementById('cin');
     var mas = [
-        [''],
-        [''],
-        [''],
-        [''],
-        ['']
+        ['qeko oqwe лаыщгвыга щщ '],
+        ['How do you think the printInteger() function is related to printers?'],
+        ['A gift but not for you Misha'],
+        ['<a href = "https://www.youtube.com/watch?v=cujM4QznLDw&t=1s">Women☕️</a>'],
+        ['JUST STOP TAKING THESE STUPID NOTES JUST STOP TAKING THESE STUPID NOTES JUST STOP TAKING THESE STUPID NOTES JUST STOP TAKING THESE STUPID NOTES']
     ];
     
     if(event.key === 'Enter'){
