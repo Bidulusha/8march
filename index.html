@@ -11,17 +11,20 @@
     <div class="main">
         <ul type = "&gt;&nbsp;">
             <li class = "info">Developer console</li>
-            <li class = "info">Version 1.5</li>
+            <li class = "info">Version 1.7</li>
             <br>
-            <div class = "inp" id = "cinp">
-                <li><label class="cursor">
-                    <input type="text" 
-                    id="cin" 
-                    name = "cin" 
-                    onblur="this.focus()"
-                    onkeydown="search(this)"
-                    autofocus/>
-                </label></li>
+            <div id = "clearpoint">
+                <div class = "inp" id = "cinp">
+                    <li><label class="cursor">
+                        <input type="text" 
+                        id="cin" 
+                        name = "cin"
+                        value = "" 
+                        onblur="this.focus()"
+                        onkeydown="search(this)"
+                        autofocus/>
+                    </label></li>
+                </div>
             </div>
         
         </ul>

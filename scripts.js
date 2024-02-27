@@ -2,6 +2,7 @@ let last = [''];
 var i = 0;
 
 function search(ele){
+    const clearpoint = document.getElementById('clearpoint');
     const p = document.getElementById('cinp');
     const inputfield = document.getElementById('cin');
     var mas = [
@@ -11,7 +12,15 @@ function search(ele){
         ['<a href = "https://www.youtube.com/watch?v=cujM4QznLDw&t=1s">Women☕️</a>'],
         ['JUST STOP TAKING THESE STUPID NOTES JUST STOP TAKING THESE STUPID NOTES JUST STOP TAKING THESE STUPID NOTES JUST STOP TAKING THESE STUPID NOTES']
     ];
-    
+    var nmas = [
+        ['qwe'],
+        ['A little bit about our documentation'],
+        ['A gift? For girls?'],
+        ['Women'],
+        ['JUST STOP TAKING THESE STUPID NOTES.']
+    ]
+
+
     if(event.key === 'Enter'){
         let f = ele.value.split(' ');
 
@@ -44,17 +53,20 @@ function search(ele){
                     p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES NUMBERS Displays the recorded numbers</li>');
                     break;
                 case 'notes numbers':
-                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES 0 PROBEL qwe</li>');
-                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES 1 PROBEL A little bit about our documentation</li>');  
-                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES 2 PROBEL WTF?</li>');  
-                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES 3 PROBEL A gift? For girls?</li>');  
-                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES 4 PROBEL Women</li>');  
-                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES 5 PROBEL JUST STOP TAKING THESE STUPID NOTES.</li>');    
+                    for(var j = 0; j < nmas.length; j++)
+                        p.insertAdjacentHTML('beforeBegin', '<li class = "info" >NOTES ' + j + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + nmas[j] + '</li>');    
+                    break;
+                case 'help help':
+                    p.insertAdjacentHTML('beforeBegin', '<li class = "info" >Display helpful information about builtin commands.</li>');
+                    break;
+                case 'clear':
+                    ele.value = '';
+                    clearpoint.innerHTML = '';
+                    clearpoint.insertAdjacentHTML('beforeend', '<div class = "inp" id = "cinp"><li><label class="cursor"><input type="text" id="cin" name = "cin" value = ""  onblur="this.focus()"onkeydown="search(this)" autofocus/></label></li></div>');
                     break;
                 default:
                     p.insertAdjacentHTML('beforeBegin', '<li class = "info" >&quot;' + ele.value + '&quot; it is not an internal program</li>');
                     p.insertAdjacentHTML('beforeBegin', '<li class = "info" >To display the list of commands, use the Command help</li>');
-                    
                     break;
             } 
         }
